@@ -4,7 +4,7 @@ Javascript implementation of [**lambert W function**](https://en.wikipedia.org/w
 
 ### Notes
 * This library **does not** support **complex** numbers.
-* This library **cannot** compute `W(x)` value of numbers **greater** than **Euler's number** ( 2.718... ).
+* This library **cannot** compute `W(x)` value of numbers **smaller** than **Euler's number** ( 2.718... ).
 
 ## Installation
 
