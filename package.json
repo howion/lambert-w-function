@@ -1,0 +1,22 @@
+{
+  "name": "lambert-w-function",
+  "version": "1.0.0",
+  "description": "JS implementation of Lambert W function.",
+  "main": "./dist/js/index.js",
+  "types": "./dist/definitions/index.d.ts",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "howion",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-clip-empty-files": "^0.1.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-typescript": "^5.0.1",
+    "merge2": "^1.2.3",
+    "typescript": "^3.3.4000"
+  }
+}

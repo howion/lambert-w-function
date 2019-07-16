@@ -1,0 +1,16 @@
+# IGNORE NODE FOLDERS
+node_modules/
+
+# IGNORE IDEs
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IGNORE SYSTEM FILES
+.DS_Store
+Thumbs.db
+$RECYCLE.BIN/
