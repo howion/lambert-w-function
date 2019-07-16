@@ -1,7 +1,7 @@
 {
   "name": "lambert-w-function",
   "version": "1.0.0",
-  "description": "JS implementation of Lambert W function.",
+  "description": "Javascript implementation of Lambert W function.",
   "main": "./dist/js/index.js",
   "types": "./dist/definitions/index.d.ts",
   "scripts": {
