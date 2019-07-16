@@ -4,12 +4,26 @@
   "description": "Javascript implementation of Lambert W function.",
   "main": "./dist/js/index.js",
   "types": "./dist/definitions/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/howion/lambert-w-function.git"
+  },
+  "keywords": [
+    "math",
+    "mathematics",
+    "lambert",
+    "library",
+    "typescript",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/howion/lambert-w-function/issues"
+  },
   "scripts": {
     "start": "gulp"
   },
   "author": "howion",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "del": "^4.0.0",
     "gulp": "^4.0.0",
