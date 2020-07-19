@@ -1,10 +1,10 @@
 # lambert-w-function
 
-Javascript implementation of [**lambert W function**](https://en.wikipedia.org/wiki/Lambert_W_function) aka **Omega Function**.
+Javascript implementation of [**Lambert W function**](https://en.wikipedia.org/wiki/Lambert_W_function) aka **Omega Function**.
 
 ### Notes
 * This library **does not** support **complex** numbers.
-* This library **cannot** compute `W(x)` value of numbers **smaller** than **Euler's number** ( 2.718... ).
+* This implementation **does not** support inputs **smaller** than **Euler's number** ( 2.718... ). [See on Desmos.](https://www.desmos.com/calculator/5kf9gammls)
 
 ## Installation
 
@@ -41,10 +41,6 @@ W(x) = ln(x) - ln(ln(x) - ln(ln(x) - ...))
 from
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/442ef6693fdf0589b4ec212a6f1e73d5ecbd610e)
-
-## How Accurate Is It
-
-[**View**](https://www.desmos.com/calculator/5kf9gammls) on **Desmos**.
 
 ## License
 
