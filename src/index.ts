@@ -10,7 +10,7 @@ function ln($x) { return Math.log($x) }
 function W($x: number, $iterations: number = 10): number
 {
     // CHECK GIVEN PARAMETERS
-    if ( $x <= Math.E ) throw new Error('This library cannot compute the W(x) value of numbers less than Euler\'s number.')
+    if ( $x < Math.E ) throw new Error('This library cannot compute the W(x) value of numbers less than Euler\'s number.')
     if ( $iterations < 1 ) throw new Error('Iterations cannot be smaller than 1.')
 
     let $result = ln($x)
