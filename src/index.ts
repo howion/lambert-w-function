@@ -23,7 +23,6 @@ function W($x: number, $iterations: number = 10): number
     }
     while ( $iterations > 0 )
 
-    // AND DONE
     return $result;
 }
 
