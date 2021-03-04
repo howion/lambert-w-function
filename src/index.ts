@@ -1,5 +1,5 @@
 // LOGORITHM FUNCTION
-function ln($x) { return Math.log($x) }
+function ln($x) { return Math.log($x); }
 
 /**
  * Computes Y from X=Y*exp(Y)
@@ -10,21 +10,21 @@ function ln($x) { return Math.log($x) }
 function W($x: number, $iterations: number = 10): number
 {
     // CHECK GIVEN PARAMETERS
-    if ( $x < Math.E ) throw new Error('This library cannot compute the W(x) value of numbers less than Euler\'s number.')
-    if ( $iterations < 1 ) throw new Error('Iterations cannot be smaller than 1.')
+    if ( $x < Math.E ) throw new Error('This library cannot compute the W(x) value of numbers less than Euler\'s number.');
+    if ( $iterations < 1 ) throw new Error('Iterations cannot be smaller than 1.');
 
-    let $result = ln($x)
+    let $result = 1;
 
     // ln(x/ln(x/ln(x...))))
     do
     {
-        $result = ln($x) - ln($result)
-        $iterations--
+        $result = ln($x) - ln($result);
+        $iterations--;
     }
     while ( $iterations > 0 )
 
     // AND DONE
-    return $result
+    return $result;
 }
 
 export
