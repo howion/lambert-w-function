@@ -10,13 +10,13 @@ Please note that this library **does not** support **complex** numbers and only 
 
 From [**npm**](https://www.npmjs.com/package/lambert-w-function) via npm
 
-```console
+```bash
 npm install lambert-w-function
 ```
 
 or via yarn
 
-```console
+```bash
 yarn add lambert-w-function
 ```
 
