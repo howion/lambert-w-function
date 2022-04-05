@@ -65,6 +65,8 @@ lambertW0_SimpleIteration_LT_E(x: number, iterations = 10): number
 lambertW0_SimpleIteration_GT_E(x: number, iterations = 10): number
 ```
 
+You can check out the [**Desmos Demo**](https://www.desmos.com/calculator/rhbaludwth) to preview simple iteration algorithm up to 20 iterations.
+
 ## License
 
 This project is licensed under the [**MIT**](https://github.com/howion/lambert-w-function/blob/master/LICENSE) license so that you can just do whatever you want with it.
