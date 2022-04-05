@@ -1,36 +1,38 @@
 {
-  "name": "lambert-w-function",
-  "version": "2.0.0",
-  "description": "Javascript implementation of Lambert W function.",
-  "main": "./dist/js/index.js",
-  "types": "./dist/definitions/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/howion/lambert-w-function.git"
-  },
-  "keywords": [
-    "math",
-    "mathematics",
-    "lambert",
-    "library",
-    "typescript",
-    "javascript"
-  ],
-  "bugs": {
-    "url": "https://github.com/howion/lambert-w-function/issues"
-  },
-  "scripts": {
-    "start": "gulp"
-  },
-  "author": "howion",
-  "license": "MIT",
-  "devDependencies": {
-    "del": "^4.0.0",
-    "gulp": "^4.0.0",
-    "gulp-clip-empty-files": "^0.1.2",
-    "gulp-plumber": "^1.2.1",
-    "gulp-typescript": "^5.0.1",
-    "merge2": "^1.2.3",
-    "typescript": "^3.3.4000"
-  }
+    "name": "lambert-w-function",
+    "version": "3.0.0",
+    "description": "A JavaScript implementation for the Lambert W Function on the principial branch.",
+    "main": "./dist/js/index.js",
+    "types": "./dist/definitions/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/howion/lambert-w-function.git"
+    },
+    "keywords": [
+        "math",
+        "mathematics",
+        "lambert",
+        "omega-function",
+        "typescript"
+    ],
+    "bugs": {
+        "url": "https://github.com/howion/lambert-w-function/issues"
+    },
+    "scripts": {
+        "dev": "gulp",
+        "build": "gulp build",
+        "prettier": "prettier --write ."
+    },
+    "author": "howion",
+    "license": "MIT",
+    "devDependencies": {
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-clip-empty-files": "^0.1.2",
+        "gulp-plumber": "^1.2.1",
+        "gulp-typescript": "5.0.1",
+        "merge2": "^1.4.1",
+        "prettier": "^2.6.2",
+        "typescript": "^4.6.3"
+    }
 }

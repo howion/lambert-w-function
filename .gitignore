@@ -1,3 +1,7 @@
+# IGNORE LOCK FILES
+package-lock.json
+yarn.lock
+
 # IGNORE NODE FOLDERS
 node_modules/
 
