@@ -1,8 +1,12 @@
 # lambert-w-function
 
-![GitHub last commit](https://img.shields.io/github/last-commit/howion/lambert-w-function) ![npm](https://img.shields.io/npm/dt/lambert-w-function?label=npm%20downloads) ![npm](https://img.shields.io/npm/dw/lambert-w-function?label=npm%20downloads%20weekly) ![NPM](https://img.shields.io/npm/l/lambert-w-function) ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/lambert-w-function)
+[![GitHub last commit](https://img.shields.io/github/last-commit/howion/lambert-w-function)](https://github.com/howion/lambert-w-function/commits/master)
+[![npm](https://img.shields.io/npm/dt/lambert-w-function?label=npm%20downloads)](https://www.npmjs.com/package/lambert-w-function)
+[![npm](https://img.shields.io/npm/dw/lambert-w-function?label=npm%20downloads%20weekly)](https://www.npmjs.com/package/lambert-w-function)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/lambert-w-function)](https://www.npmjs.com/package/lambert-w-function)
+[![License](https://img.shields.io/npm/l/lambert-w-function)](https://github.com/howion/lambert-w-function/blob/master/LICENSE)
 
-This is a JavaScript implementation for the [**Lambert W Function**](https://en.wikipedia.org/wiki/Lambert_W_function) which is also known as **Omega Function** on the principal branch `W_0`.
+This is a JavaScript implementation for the [**Lambert W Function**](https://en.wikipedia.org/wiki/Lambert_W_function), which is also known as **Omega Function**, on the principal branch `W_0`.
 
 Please note that this library **does not** support **complex** numbers and only supports the **principal branch**.
 
