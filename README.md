@@ -1,6 +1,7 @@
 # lambert-w-function
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/howion/lambert-w-function)](https://github.com/howion/lambert-w-function/commits/master)
+[![npm](https://img.shields.io/npm/v/lambert-w-function)](https://www.npmjs.com/package/lambert-w-function)
 [![npm](https://img.shields.io/npm/dt/lambert-w-function?label=npm%20downloads)](https://www.npmjs.com/package/lambert-w-function)
 [![npm](https://img.shields.io/npm/dw/lambert-w-function?label=npm%20downloads%20weekly)](https://www.npmjs.com/package/lambert-w-function)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/lambert-w-function)](https://www.npmjs.com/package/lambert-w-function)
