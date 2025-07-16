@@ -1,6 +1,6 @@
 {
     "name": "lambert-w-function",
-    "version": "4.0.1",
+    "version": "5.0.0",
     "description": "An efficient JavaScript implementation for the Lambert W Function on the principial branch.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
