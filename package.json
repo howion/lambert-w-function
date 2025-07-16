@@ -1,7 +1,7 @@
 {
     "name": "lambert-w-function",
-    "version": "3.0.0",
-    "description": "A JavaScript implementation for the Lambert W Function on the principial branch.",
+    "version": "4.0.0",
+    "description": "An efficient JavaScript implementation for the Lambert W Function on the principial branch.",
     "main": "./dist/js/index.js",
     "types": "./dist/definitions/index.d.ts",
     "repository": {
@@ -19,20 +19,15 @@
         "url": "https://github.com/howion/lambert-w-function/issues"
     },
     "scripts": {
-        "dev": "gulp",
-        "build": "gulp build",
-        "prettier": "prettier --write ."
+        "build": "tsup",
+        "format": "prettier --write ."
     },
     "author": "howion",
     "license": "MIT",
     "devDependencies": {
-        "del": "^6.0.0",
-        "gulp": "^4.0.2",
-        "gulp-clip-empty-files": "^0.1.2",
-        "gulp-plumber": "^1.2.1",
-        "gulp-typescript": "5.0.1",
-        "merge2": "^1.4.1",
-        "prettier": "^2.6.2",
-        "typescript": "^4.6.3"
+        "@swc/core": "^1.12.14",
+        "prettier": "^3.6.2",
+        "tsup": "^8.5.0",
+        "typescript": "^5.8.3"
     }
 }

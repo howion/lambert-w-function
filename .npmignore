@@ -2,4 +2,3 @@
 .gitattributes
 .gitignore
 .prettier*
-gulpfile.js

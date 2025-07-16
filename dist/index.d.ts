@@ -43,4 +43,5 @@ declare function lambertW0_SimpleIteration_LT_E(x: number, iterations?: number):
  * @returns W(x)
  */
 declare function lambertW0_SimpleIteration_GT_E(x: number, iterations?: number): number;
-export { lambertW0_IaconoBoyd as lambertW0, lambertW0_IaconoBoyd, lambertW0Log_xmodar as lambertW0Log, lambertW0Log_xmodar, lambertW0_SimpleIteration_LT_E, lambertW0_SimpleIteration_GT_E, W0_LIMIT_POINT };
+
+export { W0_LIMIT_POINT, lambertW0_IaconoBoyd as lambertW0, lambertW0Log_xmodar as lambertW0Log, lambertW0Log_xmodar, lambertW0_IaconoBoyd, lambertW0_SimpleIteration_GT_E, lambertW0_SimpleIteration_LT_E };

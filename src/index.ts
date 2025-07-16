@@ -1,11 +1,11 @@
-const { E, PI, log, exp } = Math
+const { E, log, exp } = Math
 const W0_LIMIT_POINT = -(1 / E)
 
 /**
- * Lambert W Function for the principal branch.
+ * Lambert W function for the principal branch.
  *
- * @link https://gist.github.com/xmodar/baa392fc2bec447d10c2c20bbdcaf687
- * @link https://link.springer.com/content/pdf/10.1007/s10444-017-9530-3.pdf
+ * {@link https://gist.github.com/xmodar/baa392fc2bec447d10c2c20bbdcaf687}
+ * {@link https://link.springer.com/content/pdf/10.1007/s10444-017-9530-3.pdf}
  *
  * @author xmodar
  *
@@ -17,7 +17,7 @@ function lambertW0_IaconoBoyd(x: number, is_x_log = false): number {
     if (is_x_log) return lambertW0Log_xmodar(x)
     if (x >= 0) return lambertW0Log_xmodar(log(x)) // handles [0, inf]
     const xE = x * E
-    if (isNaN(x) || xE < -1) return NaN // handles NaN and [-inf, -1 / E)
+    if (Number.isNaN(x) || xE < -1) return NaN // handles NaN and [-inf, -1 / E)
     const y = (1 + xE) ** 0.5
     const z = log(y + 1)
     const n = 1 + /* b= */ 1.1495613113577325 * y
@@ -26,11 +26,11 @@ function lambertW0_IaconoBoyd(x: number, is_x_log = false): number {
     w *= log(xE / w) / (1 + w)
     w *= log(xE / w) / (1 + w)
     w *= log(xE / w) / (1 + w)
-    return isNaN(w) ? (xE < -0.5 ? -1 : x) : w // handles end points
+    return Number.isNaN(w) ? (xE < -0.5 ? -1 : x) : w // handles end points
 }
 
 /**
- * Lambert W Function for log(x) for the principal branch.
+ * Lambert W function for log(x) for the principal branch.
  *
  * {@link https://gist.github.com/xmodar/baa392fc2bec447d10c2c20bbdcaf687}
  *
@@ -40,7 +40,7 @@ function lambertW0_IaconoBoyd(x: number, is_x_log = false): number {
  * @returns
  */
 function lambertW0Log_xmodar(logX: number): number {
-    if (isNaN(logX)) return NaN // handles NaN
+    if (Number.isNaN(logX)) return NaN // handles NaN
     const logXE = +logX + 1
     const logY = 0.5 * log1Exp(logXE)
     const logZ = log(log1Exp(logY))
@@ -50,13 +50,14 @@ function lambertW0Log_xmodar(logX: number): number {
     w *= (logXE - log(w)) / (1 + w)
     w *= (logXE - log(w)) / (1 + w)
     w *= (logXE - log(w)) / (1 + w)
-    return isNaN(w) ? (logXE < 0 ? 0 : Infinity) : w // handles end points
+    return Number.isNaN(w) ? (logXE < 0 ? 0 : Infinity) : w // handles end points
 }
 
 /**
  * Computes log(1 + exp(x)) without precision overflow.
  *
  * {@link https://gist.github.com/xmodar/baa392fc2bec447d10c2c20bbdcaf687}
+ * {@link https://en.wikipedia.org/wiki/LogSumExp}
  * @author xmodar
  *
  * @param x
@@ -67,7 +68,7 @@ function log1Exp(x: number): number {
 }
 
 /**
- * Simple Lambert W Function approximation for (x <= Math.E). Note that it won't raise an error if x is greater than E.
+ * Simple iterative Lambert W function approximation for (x <= Math.E). Note that it won't raise an error if x is greater than E.
  *
  * @author howion
  *
@@ -87,7 +88,7 @@ function lambertW0_SimpleIteration_LT_E(x: number, iterations = 10): number {
 }
 
 /**
- * Simple Lambert W Function approximation for (x > Math.E). Note that it won't raise an error if x is less than E.
+ * Simple iterative Lambert W function approximation for (x > Math.E). Note that it won't raise an error if x is less than E.
  *
  * @author howion
  *
