@@ -6,11 +6,11 @@
 [![npm](https://img.shields.io/npm/dw/lambert-w-function?label=npm%20downloads%20weekly)](https://www.npmjs.com/package/lambert-w-function)
 [![License](https://img.shields.io/npm/l/lambert-w-function)](https://github.com/howion/lambert-w-function/blob/master/LICENSE)
 
-This is an **efficient** and **zero-dependency** JavaScript implementation for the [**Lambert W function**](https://en.wikipedia.org/wiki/Lambert_W_function) on the principal branch `W_0`.
+This is **efficient** and **zero-dependency** JavaScript implementations for the [**Lambert W function**](https://en.wikipedia.org/wiki/Lambert_W_function) on the principal branch `W_0`.
 
 Please note that this library does **not** support **complex** numbers and only supports the **principal branch**.
 
-Currently there are two three implementations: 
+Currently there are three implementations:
 
 * Naive implementation ([**desmos**](https://www.desmos.com/calculator/rhbaludwth)) that make use of iterative method to furnish (relatively poor) approximate solution.
 * The [**work**](https://link.springer.com/content/pdf/10.1007/s10444-017-9530-3.pdf) of Roberto Iacono and John P. Boyd with a maximum relative error 5E-3. This is the **default** and the one you should use.
